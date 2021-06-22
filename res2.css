@@ -33,6 +33,7 @@ img {
   header img {
     width: 18%;
   }
+  
   #arrows {
     position: absolute;
     height: 21px;
@@ -303,7 +304,7 @@ img {
     margin: 130px 0 0 0;
     font-weight: 400;
     padding-left: 35px;
-    font-size: 30px;
+    font-size: 35px;
     color: #4E5346;
     animation-name: quality;
     animation-duration: 3xs;
@@ -321,7 +322,7 @@ img {
 
 
   .products {
-    font-size: 13px;
+    font-size: 14px;
     color: #4E5346;
     text-align: center;
     margin: 3px 0px 90px 0px;
@@ -575,7 +576,7 @@ img {
  } 
 
  .same {
-  font-size: 16px;
+  font-size: 14px;
   color: #ffffff;
   text-align: center;
   margin: 0;
@@ -685,6 +686,7 @@ img {
 .box {
   /* width:172px; */
   flex-basis: 40%;
+  margin-left: 20px;
 }
 
 .copy {
@@ -712,7 +714,7 @@ img {
 .toppage p {
   margin: 0;
   line-height: 30px;
-  font-size: 12px;
+  font-size: 13px;
   border-left: 1px solid #dcddda;
   padding-left: 15px;
 }
@@ -727,7 +729,7 @@ img {
 .tells p {
   margin: 0;
   line-height: 30px;
-  font-size: 12px;
+  font-size: 13px;
   border-left: 1px solid #dcddda;
   padding-left: 15px;
 }
@@ -735,12 +737,12 @@ img {
 .end {
   flex-basis: 28%;
   text-align: left;
-  font-size: 13px;
   /* margin-top: 100px;
   margin-bottom: 100px; */
 }
 
 .end p {
+  font-size: 13px;
   line-height: 25px;
   border-left: 1px solid #dcddda;
   padding-left: 15px;
@@ -762,7 +764,7 @@ img {
       display: none;
     }
 
-        .show-only-pc {
+    .show-only-pc {
       display: block;
     }
     
@@ -870,7 +872,7 @@ img {
     
        a  {
          color: #4E5346;
-         font-size: 12px;
+         font-size: 15px;
          text-decoration: none;
        }
        
