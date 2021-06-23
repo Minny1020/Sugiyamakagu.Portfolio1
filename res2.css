@@ -851,6 +851,13 @@ img {
        #contact:hover {
          opacity: .7;
        }
+
+       header.menu {
+        display: flex;
+        margin: 0;
+        padding: 0;
+      }
+      
        header .logo {
          flex-basis: 20%;
          height: 100%;
