@@ -9,60 +9,57 @@ img {
 
   }
 
-  @media (max-width:767px) {
+  @media (max-width:1000px) {
     body {
       margin: 0px;
       float:none;
+      font-family: 游明朝;
+    }
+    header {
+      position: fixed;
+      padding: 20px 0px 0px 10px;
+      width: 100%;
+      height: 50px;
+      top: 0;
+      background-color: #ffffff;
+      z-index: 1000;
+    }
+  
+    header img {
+      width: 40%;
+    }
+    
+    #arrows {
+      position: absolute;
+      height: 21px;
+      width: 24px;
+      right: 30px;
+      display: inline-block;
+      box-sizing: border-box;
+    }
+  
+    #arrows div {
+      position: absolute;
+      height: 2px;
+      width: 28px;
+      border-bottom:5px;
+      background-color:#4E5346;
+      box-sizing: border-box;
+    }
+  
+    #arrows div:nth-of-type(1) {
+      top: 0;
+    }
+  
+    #arrows div:nth-of-type(2) {
+      top: 10px;
+    }
+  
+    #arrows div:nth-of-type(3) {
+      bottom: 0;
     }
   }
 
-  body {
-    font-family: 游明朝;
-  }
-
-  header {
-    position: fixed;
-    padding: 20px 0px 0px 10px;
-    width: 100%;
-    height: 50px;
-    top: 0;
-    background-color: #ffffff;
-    z-index: 1000;
-  }
-
-  header img {
-    width: 18%;
-  }
-  
-  #arrows {
-    position: absolute;
-    height: 21px;
-    width: 24px;
-    right: 30px;
-    display: inline-block;
-    box-sizing: border-box;
-  }
-
-  #arrows div {
-    position: absolute;
-    height: 2px;
-    width: 28px;
-    border-bottom:5px;
-    background-color:#4E5346;
-    box-sizing: border-box;
-  }
-
-  #arrows div:nth-of-type(1) {
-    top: 0;
-  }
-
-  #arrows div:nth-of-type(2) {
-    top: 10px;
-  }
-
-  #arrows div:nth-of-type(3) {
-    bottom: 0;
-  }
 
    /* #arrows {
      position: absolute;
@@ -180,41 +177,91 @@ img {
     padding: 0px;
   } */
 
-  .news {
-    display: flex;
-    align-items: baseline;
-    margin-top: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-bottom: 120px;
-    font-weight: bolder;
+  @media (max-width:1000px) {
+
+    .news {
+      display: flex;
+      align-items: baseline;
+      margin: 20px 0px 0px 0px;
+      padding-left: 5px;
+      font-weight: bolder;
+    }
+  
+    .news h2 {
+      margin: 0px 10px;
+      padding:0px;
+      font-size: 15px;
+      flex-basis: 10%;
+    }
+  
+    .date {
+      margin: 0px 10px;
+      padding:0;
+      font-size: 13px;
+      flex-basis: 10%;
+    }
+  
+    .website {
+      font-size: 14px;
+      padding: 0px 10px 0px 18px;
+      flex-basis: 60%;
+    }
+  
+    .arrow {
+      font-size: 13px;
+      background: url(images/arrow_green_right.svg) right top 1px/60px 15px no-repeat;
+      padding: 0px;
+      width: 200px;
+    }
+  
+    .website p {
+      font-size: 14px;
+      font-weight: bold;
+    }
+  
+    .website a {
+      font-size: 13px;
+      display: block;
+      background: url(images/arrow_green_right.svg) right top 6px/60px 4px no-repeat;
+      margin: 0px 0px 70px 190px;
+      padding: 0px;
+      font-weight: bold;
+    }
   }
 
-  .news h2 {
-    margin: 0px 10px;
-    padding:0px;
-    font-size: 15px;
-    flex-basis: 10%;
-  }
+  @media (max-width:1000px) {
 
-  .date {
-    margin: 0px 10px;
-    padding:0;
-    font-size: 13px;
-    flex-basis: 10%;
-  }
+    .photo img {
+      display: block;
+      padding-left: 20px;
+      margin: 0px;
+      width: 95%;
+    }
+    
+    .add {
+      font-weight: 400;
+    }
 
-  .website {
-    font-size: 14px;
-    padding: 0px 10px 0px 18px;
-    flex-basis: 60%;
-  }
-
-  .arrow {
-    font-size: 13px;
-    background: url(images/arrow_green_right.svg) right top 1px/60px 15px no-repeat;
-    padding: 0px;
-    width: 200px;
+    .english {
+      font-size: 30px;
+      margin: 0px;
+      padding:30px 10px 0px 20px;
+      color: #4E5346;
+    }
+    
+    .jp {
+      font-size: 13px;
+      margin: 6px 0px 0px 0px;
+      color: #4E5346;
+      padding: 0px 0px 0px 25px;
+    }
+  
+    .text {
+      font-size: 15px;
+      margin: 40px 0px 60px;
+      color: #4E5346;
+      padding: 0px 10px 0px 20px;
+    }
   }
 
     /* .photo img {
@@ -245,39 +292,6 @@ img {
       padding: 0px 10px 0px 20px;
     } */
 
-    .content {
-      display: flex;
-    }
-  .content .content-left {
-    flex-basis: 50%;
-    padding-top: 10px;
-  }
-  .content .content-right {
-    flex-basis: 50%;
-
-  }
-
-  .english {
-    font-size: 35px;
-    margin: 0px;
-    padding:30px 10px 0px 40px;
-    color: #4E5346;
-  }
-
-  .jp {
-    font-size: 14px;
-    margin: 12px 0px 0px 0px;
-    color: #4E5346;
-    padding: 0px 10px 0px 45px;
-  }
-
-  .text {
-    font-size: 14px;
-    margin: 40px 0px 60px;
-    color: #4E5346;
-    padding: 0px 10px 0px 40px;
-  }
-
   .side {
     display: flex;
     text-align: center;
@@ -285,12 +299,13 @@ img {
 
   .explain {
     font-size: 14px;
-    text-align: left;
+    text-align: center;
     border:1px solid #4E5346;
     box-sizing: border-box;
     margin: 30px 20px 0px 40px;
     padding: 30px 0px 30px 20px;
-    width: 30%;
+    width: 80%;
+    font-weight: bold;
   }
 
   .sugiyama {
@@ -299,12 +314,13 @@ img {
     padding-right: 100px;
   }
 
+@media (max-width:1000px) {
+
   .eg {
     text-align: center;
     margin: 130px 0 0 0;
     font-weight: 400;
-    padding-left: 35px;
-    font-size: 35px;
+    font-size: 30px;
     color: #4E5346;
     animation-name: quality;
     animation-duration: 3xs;
@@ -313,7 +329,10 @@ img {
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-play-state: running;
+    margin: 80px 0px 0px 0px;
+    width:100%;
   }
+}
 
   @keyframes quality {
     0%{transform: translateY(-10px);}
@@ -330,45 +349,48 @@ img {
     padding-left: 20px;
   }
 
-  /* .chair {
-    margin-top: 90px;
-    padding: 0px 20px;
-  }
+  @media (max-width:1000px) {
 
-  .goods, .woods, .woody {
-    display:block;
-    padding: 0px 20px;
+    .chair {
+      margin-top: 90px;
+      padding: 0px 20px;
+    }
+  
+    .goods, .woods, .woody {
+      display:block;
+      padding: 0px 20px;
+    }
+  
+    .goods h3 {
+      font-size:15px;
+      background: url(images/arrow_green_right.svg) right center/60px 40px no-repeat;
+      margin:10px 0px 20px 0px;
+      color: #4E5346;
+    }
+  
+    .woody h3 {
+      font-size: 15px;
+      background: url(images/arrow_green_right.svg) right center/60px 40px no-repeat;
+      margin: 10px 0px 20px 0px;
+      color: #4E5346;
+    }
+    .skills {
+      margin-top: 30px;
+      padding: 0px 20px;
+    }
+  
+    .facility {
+      display: block;
+      padding: 0px 20px;
+    }
+  
+    .facility h3 {
+      font-size: 15px;
+      background: url(images/arrow_green_right.svg) right center/60px 40px no-repeat;
+      margin: 10px 0px 20px 0px;
+      color: #4E5346;
+    }
   }
-
-  .goods h3 {
-    font-size:15px;
-    background: url(images/arrow_green_right.svg) right center/60px 40px no-repeat;
-    margin:10px 0px 20px 0px;
-    color: #4E5346;
-  }
-
-  .woody h3 {
-    font-size: 15px;
-    background: url(images/arrow_green_right.svg) right center/60px 40px no-repeat;
-    margin: 10px 0px 20px 0px;
-    color: #4E5346;
-  }
-  .skills {
-    margin-top: 30px;
-    padding: 0px 20px;
-  }
-
-  .facility {
-    display: block;
-    padding: 0px 20px;
-  }
-
-  .facility h3 {
-    font-size: 15px;
-    background: url(images/arrow_green_right.svg) right center/60px 40px no-repeat;
-    margin: 10px 0px 20px 0px;
-    color: #4E5346;
-  } */
 
   .oneofone {
     display: flex;
@@ -759,9 +781,9 @@ img {
   display: none;
 }
 
-@media screen and (min-width: 1001px)  {
+@media (min-width: 1001px)  {
     .show-only-sp {
-      display: none;
+      display: none; 
     }
 
     .show-only-pc {
@@ -868,14 +890,104 @@ img {
        header #intro {
          flex-basis: 80%;
        }
+
+       .news {
+        display: flex;
+        align-items: baseline;
+        margin-top: 50px;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-bottom: 120px;
+      }
+  
+      .news h2 {
+        margin: 0px 10px;
+        padding:0px;
+        font-size: 15px;
+        flex-basis: 10%;
+      }
+  
+      .date {
+        margin: 0px 10px;
+        padding:0;
+        font-size: 13px;
+        flex-basis: 10%;
+      }
+  
+      .website {
+        font-size: 14px;
+        padding: 0px 10px 0px 18px;
+        flex-basis: 60%;
+      }
+  
+      .arrow {
+        font-size: 13px;
+        display: block;
+        background: url(images/arrow_green_right.svg) right top 6px/60px 15px no-repeat;
+        padding: 0px;
+        width: 200px;
+      }
     
-       .footer {
-         display: inline-block;
-         color: #4E5346;
-         background-color: #ffffff;
-         font-size: 15px;
-         padding: 50px 20px 0px 20px;
-       }
+     .content {
+        display: flex;
+      }
+    .content .content-left {
+      flex-basis: 50%;
+      padding-top: 10px;
+    }
+    .content .content-right {
+      flex-basis: 50%;
+    }
+
+    .english {
+      font-size: 35px;
+      margin: 0px;
+      padding:30px 10px 0px 20px;
+      color: #4E5346;
+    }
+    
+    .jp {
+      font-size: 14px;
+      margin: 12px 0px 0px 0px;
+      color: #4E5346;
+      padding: 0px 0px 0px 25px;
+      font-weight: 500;
+    }
+    
+    .text {
+      font-size: 14px;
+      margin: 40px 0px 60px;
+      color: #4E5346;
+      padding: 0px 10px 0px 20px;
+      font-weight: 500;
+    }
+
+    .explain {
+      font-size: 15px;
+      text-align: center;
+      box-sizing: border-box;
+      border:1px solid #4E5346;
+      margin: 30px 20px 0px 40px;
+      padding: 30px 0px 30px 20px;
+      width: 400px;
+      font-weight: bolder;
+    }
+    .explain span {
+    background: url(images/arrow_green_right.svg) center left/160% 4px no-repeat;
+    padding-right: 100px;
+    }
+
+    .footer {
+      display: inline-block;
+      color: #4E5346;
+      background-color: #ffffff;
+      font-size: 15px;
+      padding: 50px 20px 0px 20px;
+    }
+
+    .text p {
+      margin: 15px 0px 25px 0px;
+    }
     
        a  {
          color: #4E5346;
@@ -886,5 +998,31 @@ img {
        a:hover {
          color: #4E5346;
        }
+
+       .eg {
+        text-align: center;
+        margin-top:150px;
+        margin-bottom: 0;
+        padding:0;
+        outline:0;
+        font-size: 35px;
+        color: #4E5346;
+        animation-name: quality;
+        animation-duration: 3xs;
+        animation-timing-function: ease;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-play-state: running;
+      }
+      
+      .products {
+        font-size: 14px;
+        color: #4E5346;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 90px;
+        font-weight: bold;
+      }
 }  
 

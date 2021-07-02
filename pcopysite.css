@@ -11,25 +11,77 @@ wrapper {
 body {
   margin: 0px;
   float: none;
-  font-family: 游明朝;
+  font-family: toppan-bunkyu-mincho-pr6n, "ヒラギノ明朝 Pro W3", HiraMinPro-W3, 游明朝, "Yu Mincho", YuMincho, HG明朝E, "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
 }
 
 header {
-  position: relative;
+  position: fixed;
   display:flex;
   -webkit-box-align: center;
   align-items: center;
-  font-size: 14px;
+  font-size: 14px; 
   letter-spacing: 0.07em;
-  padding: 20px 0px 0px 10px;
-    width: 20%;
-    height: 50px;
+    width: 100%;
+    height: 120px;
     top: 0;
     background-color: #ffffff;
     z-index: 1000;
 }
+
     header img {
-      width: 100%;
+      width: 180px;
+      padding-left: 40px;
+    }
+
+    #intro {
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+    header h2 {
+      font-weight: 400;
+      font-size: 14px;
+    }
+    #manufacture {
+      flex-basis: 70%;
+      display: flex;
+      justify-content: space-around;
+    }
+    #hiring {
+      flex-basis: 10%;
+      border-left: 1px solid #dcddda;
+      border-right: 1px solid #dcddda;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #hiring:hover {
+      background-color: #4e5346;
+      color: #ffffff;
+    }
+    #contact {
+      flex-basis: 20%;
+      border: 1px solid #ddd;
+      background-color: #4e5346;
+      color: #ffffff;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #contact:hover {
+      opacity: .7;
+    }
+    header .logo {
+      flex-basis: 20%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    header #intro {
+      flex-basis: 80%;
     }
 
     .footer {
@@ -39,7 +91,7 @@ header {
       font-size: 15px;
       padding: 50px 20px 0px 20px;
     }
-    
+
     a  {
       color: #4E5346;
       font-size: 12px;
@@ -52,7 +104,7 @@ header {
 
     .information {
       box-sizing: border-box;
-      width: 60px;
+      width: 70px;
       text-align: center;
       border: 1px solid #dcddda;
       margin: 0px 10px;
@@ -61,16 +113,18 @@ header {
     }
     
     .top {
-      width:100%;
+      width:95%;
       height: auto;
+      padding-left: 25px;
+      padding-top: 130px;
     }
 
     .news {
       display: flex;
       align-items: baseline;
       margin-top: 50px;
-      padding-left: 20px;
-      padding-right: 20px;
+      padding-left: 40px;
+      padding-right: 40px;
       margin-bottom: 120px;
     }
 
@@ -78,30 +132,39 @@ header {
       margin: 0px 10px;
       padding:0px;
       font-size: 15px;
+      flex-basis: 10%;
     }
 
     .date {
       margin: 0px 10px;
       padding:0;
       font-size: 13px;
+      flex-basis: 10%;
     }
 
     .website {
       font-size: 14px;
       padding: 0px 10px 0px 18px;
+      flex-basis: 60%;
     }
 
     .arrow {
       font-size: 13px;
       display: block;
       background: url(images/arrow_green_right.svg) right top 6px/60px 15px no-repeat;
-      margin-left: 480px;
       padding: 0px;
+      width: 200px;
     }
 
       .content {
         display: flex;
       }
+    .content .content-left {
+      flex-basis: 50%;
+    }
+    .content .content-right {
+      flex-basis: 50%;
+    }
 
     .english {
       font-size: 35px;
@@ -115,6 +178,7 @@ header {
       margin: 12px 0px 0px 0px;
       color: #4E5346;
       padding: 0px 0px 0px 25px;
+      font-weight: 500;
     }
 
     .text {
@@ -122,24 +186,33 @@ header {
       margin: 40px 0px 60px;
       color: #4E5346;
       padding: 0px 10px 0px 20px;
+      font-weight: 500;
+    }
+
+    .text p {
+      margin: 15px 0px 25px 0px;
     }
 
 .side {
   display: flex;
   text-align: center;
-  width: 60%;
+  width: 87%;
 }
 
 .explain {
   font-size: 15px;
-  margin: 75px 0 0;
-  border:1px solid #4E5346;
+  text-align: center;
   box-sizing: border-box;
-  background: url(images/arrow_green_right.svg) right center/160% 4px no-repeat;
+  border:1px solid #4E5346;
+  margin: 30px 20px 0px 40px;
   padding: 30px 0px 30px 20px;
+  width: 30%;
   font-weight: bolder;
 }
-
+.explain span {
+background: url(images/arrow_green_right.svg) center center/160% 4px no-repeat;
+padding-right: 240px;
+}
 
 .eg {
   text-align: center;
@@ -183,14 +256,14 @@ header {
 
 .goods h3 {
   font-size:15px;
-  background: url(images/arrow_green_right.svg) right center/60px 40px no-repeat;
+  background: url(images/arrow_green_right.svg) center center/60px 40px no-repeat;
   margin:10px 0px 20px 0px;
   color: #4E5346;
 }
 
 .woody h3 {
   font-size: 15px;
-  background: url(images/arrow_green_right.svg) right center/60px 40px no-repeat;
+  background: url(images/arrow_green_right.svg) center center/60px 40px no-repeat;
   margin: 10px 0px 20px 0px;
   color: #4E5346;
 }
@@ -206,7 +279,7 @@ header {
 
 .facility h3 {
   font-size: 15px;
-  background: url(images/arrow_green_right.svg) right center/60px 40px no-repeat;
+  background: url(images/arrow_green_right.svg) center center/60px 40px no-repeat;
   margin: 10px 0px 20px 0px;
   color: #4E5346;
 }
@@ -229,9 +302,6 @@ header {
 
 .pictures {
   position: relative;
-  overflow: hidden;
-  width: 300px;
-  height: 300px;
   margin: auto;
   background: #ffffff;
   display: flex;
@@ -239,11 +309,16 @@ header {
  }
  
  .pictures img {
+   margin: 20px;
+   width: 200px;
+   flex-basis: 25%;
+ }  
+  /* .pictures img {
    position: absolute;
    width: inherit;
    height: inherit;
-  left: -100%;
-  animation-name: pictures;
+   left: -100%;
+   animation-name: pictures;
   animation-duration: 60s;
   animation-timing-function: ease-in-out;
   animation-delay: 1s;
@@ -251,15 +326,15 @@ header {
   animation-direction: normal;
   animation-fill-mode: backwards;
   animation-play-state: running;
-}
+} */
 
-.pictures img:nth-of-type(1) { animation-delay: 1s }
+/* .pictures img:nth-of-type(1) { animation-delay: 1s }
 .pictures img:nth-of-type(2) { animation-delay: 6s }
 .pictures img:nth-of-type(3) { animation-delay: 11s }
 .pictures img:nth-of-type(4) { animation-delay: 16s }
-.pictures img:nth-of-type(5) { animation-delay: 21s }
+.pictures img:nth-of-type(5) { animation-delay: 21s } */
 
-@keyframes pictures  {
+/* @keyframes pictures  {
   from {
     width:100%;
   }
@@ -271,7 +346,7 @@ header {
   18%{left:0;}
   20%{left: 100%;}
   100%{left: 100%;}
-}
+} */
 
 .us {
   font-size: 15px;
@@ -279,7 +354,8 @@ header {
   border: 1px solid #4E5346;
   box-sizing: border-box;
   padding: 30px 40px 30px 10px;
-  margin: 45px 20px 0px 20px;
+  margin-bottom: 120px;
+  margin-top: 60px;
  }
 
  .example {
@@ -288,3 +364,185 @@ header {
   text-align: center;
   padding-right:30px;
 }
+
+.about {
+  background-color: #4e5346;
+}
+
+.introduction {
+   color: #ffffff;
+   font-size: 35px;
+   text-align: center;
+   margin: 0px;
+   padding-top: 120px;
+ } 
+
+ .same {
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  border-bottom: 1px solid #4e5346;
+  margin-bottom: 0;
+}
+
+.border {
+  background-color: #4e5346;
+  padding-bottom: 150px;
+}
+
+.address {
+  background-color: #4E5346;
+  color: #ffffff;
+  padding: 85px 20px 150px 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.address img {
+  width: 27%;
+}
+
+.details {
+  text-align: left;
+  font-size: 16px;
+  flex-basis: 40%;
+}
+
+.info {
+  font-size: 15px;
+  color: #ffffff;
+  margin:  0 60px ;
+  text-align: center;
+  box-sizing: border-box;
+  background: url(images/arrow_white_right.svg) right center/60px 4px no-repeat;
+  padding: 20px 90px 20px 0px;
+}
+
+.home {
+  margin: 0;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #4e5346;
+  border-top: 1px solid #72756b;
+  border-bottom: 1px solid #72756b;
+  padding: 50px;
+}
+
+.hire {
+  color: #ffffff;
+  font-size: 15px;
+  border-color: #72756b;
+  background: url(images/arrow_white_right.svg) right center/60px 4px no-repeat;
+  padding: 20px 90px 20px 0px;
+}
+
+.color {
+   box-sizing: border-box;
+   border: 1px solid #ffffff ;
+   display: block;
+   margin-top: 35px;
+   margin-bottom: 0;
+   padding: 30px 20px;
+ }
+
+/* 
+.address a {
+  display: block;
+  border: 1px solid #fff;
+  margin: 50px 0;
+} */
+/* 
+.hire {
+  max-width: 1000px;
+  margin: 100px auto 0;
+  padding: 56px 0;
+  color: #ffffff;
+  border-top: 1px solid #72756b;
+  border-bottom: 1px solid #72756b;
+  font-size: 15px;
+  text-align: center;
+  background-color: #4e5346;
+}
+
+.hire span {
+  background: url(images/arrow_white_right.svg) right center/60px 90px no-repeat;
+  padding: 20px 90px 20px 30px;
+}
+   */
+  .last {
+    display: flex;
+    justify-content: space-around;
+    padding: 100px 10px;
+  }
+
+  .box {
+    width:172px;
+    flex-basis: 40%;
+    padding-left: 10px;
+  }
+  
+  .copy {
+    font-size: 5px;
+    margin-top: 40px;
+    margin-bottom: 0;
+    text-align: left;
+  }
+  
+  .last img {
+    width: 45%;
+  }
+/* 
+  #section {
+    align-items: flex-end;
+  }
+   */
+  .toppage {
+    flex-basis: 18%;
+    text-align: left;
+    /* margin-top: 100px;
+    margin-bottom: 100px; */
+  }
+  
+  .toppage p {
+    margin: 0;
+    line-height: 30px;
+    font-size: 12px;
+    border-left: 1px solid #dcddda;
+    padding-left: 15px;
+  }
+
+  .tells {
+    flex-basis: 14%;
+    text-align: left;
+    /* margin-top: 100px;
+    margin-bottom: 100px; */
+  }
+
+  .tells p {
+    margin: 0;
+    line-height: 30px;
+    font-size: 12px;
+    border-left: 1px solid #dcddda;
+    padding-left: 15px;
+  }
+
+  .end {
+    flex-basis: 28%;
+    text-align: left;
+    font-size: 13px;
+    /* margin-top: 100px;
+    margin-bottom: 100px; */
+  }
+
+  .end p {
+    line-height: 25px;
+    border-left: 1px solid #dcddda;
+    padding-left: 15px;
+    margin: 0;
+  }
+  
+  .end a {
+    font-size: 7px;
+    margin-left: 13px;
+    margin-right: 0;
+  }
