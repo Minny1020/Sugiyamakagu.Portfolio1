@@ -597,13 +597,12 @@ img {
     background-color: #4E5346;
     color: #ffffff;
     padding: 40px 20px 80px 20px;
+    text-align: center;
   }
  
   .address p {
     text-align: center;
     font-size: 15px;
-    padding: 3px 0px 0px 30px;
-    width: 300px
   }
  
   .address a {
@@ -625,8 +624,6 @@ img {
  
   .address img {
     width: 20%;
-    margin: 0px 0px 40px 140px;
-    text-align: center;
   }
 
   .final {
@@ -634,17 +631,20 @@ img {
     color: #4E5346;
     font-size: 14px;
   }
+
+  .last {
+    text-align: center;
+    margin-top: 20px;
+  }
  
   .last p {
     margin: 5px 0px 0px 50px;
-    width:300px;
     font-size: 14px;
     text-align: center;
   }
  
   .last img {
     width: 45%;
-    margin: 50px 0px 30px 120px;
   }
  
   .last a {
