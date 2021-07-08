@@ -254,6 +254,7 @@ img {
       margin: 6px 0px 0px 0px;
       color: #4E5346;
       padding: 0px 0px 0px 25px;
+      font-weight: bolder;
     }
   
     .text {
@@ -261,6 +262,11 @@ img {
       margin: 40px 0px 60px;
       color: #4E5346;
       padding: 0px 10px 0px 20px;
+      font-weight: bolder;
+    }
+
+    .text p {
+      margin: 0px 0px 10px 0px;
     }
   }
 
@@ -631,20 +637,20 @@ img {
     color: #4E5346;
     font-size: 14px;
   }
-
+ 
   .last {
     text-align: center;
     margin-top: 20px;
   }
- 
+
   .last p {
-    margin: 5px 0px 0px 50px;
     font-size: 14px;
-    text-align: center;
+    margin: 2px 0px 3px 0px;
   }
  
   .last img {
     width: 45%;
+    margin-bottom: 30px;
   }
  
   .last a {
@@ -663,7 +669,7 @@ img {
   .sns {
     display: flex;
     justify-content: space-evenly;
-    margin: 5px 0px 20px 0px;
+    margin: 15px 0px 30px 0px;
   }
 }
 
@@ -788,6 +794,7 @@ img {
         padding-left: 40px;
         padding-right: 40px;
         margin-bottom: 120px;
+        font-weight: bolder;
       }
   
       .news h2 {
@@ -813,7 +820,7 @@ img {
       .arrow {
         font-size: 13px;
         display: block;
-        background: url(images/arrow_green_right.svg) right top 6px/60px 15px no-repeat;
+        background: url(images/arrow_green_right.svg) right bottom 6px/60px 15px no-repeat;
         padding: 0px;
         width: 200px;
       }
@@ -832,15 +839,15 @@ img {
     .english {
       font-size: 35px;
       margin: 0px;
-      padding:30px 10px 0px 20px;
+      padding:30px 10px 0px 40px;
       color: #4E5346;
     }
     
     .jp {
       font-size: 14px;
-      margin: 12px 0px 0px 0px;
+      margin: 10px 0px 0px 0px;
       color: #4E5346;
-      padding: 0px 0px 0px 25px;
+      padding: 0px 0px 0px 40px;
       font-weight: 500;
     }
     
@@ -848,8 +855,12 @@ img {
       font-size: 14px;
       margin: 40px 0px 60px;
       color: #4E5346;
-      padding: 0px 10px 0px 20px;
+      padding: 0px 10px 0px 40px;
       font-weight: 500;
+    }
+
+    .text p {
+      margin: 0px 0px 25px 0px;
     }
 
     .explain {
@@ -861,7 +872,7 @@ img {
       padding: 30px 0px 30px 20px;
       width: 400px;
       font-weight: bolder;
-      width: 30%;
+      width: 35%;
     }
     .explain span {
     background: url(images/arrow_green_right.svg) center left/160% 4px no-repeat;
@@ -972,10 +983,6 @@ img {
       padding: 50px 20px 0px 20px;
     }
 
-    .text p {
-      margin: 15px 0px 25px 0px;
-    }
-    
        a  {
          color: #4E5346;
          font-size: 15px;
